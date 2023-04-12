@@ -11,3 +11,4 @@ services:
       - '3000:3000'
     # コンテナを起動させ続ける（無いとupを行っても起動しない）
     tty: true
+    command: sh -c 'cd react-app && npm start'
